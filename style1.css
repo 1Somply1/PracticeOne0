@@ -2,7 +2,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    background-color: rgb(207, 131, 131);
+    background-color: rgb(174, 26, 26);
     line-height: 1.6;
 }
 
@@ -85,20 +85,27 @@ header {
 }
 
 .dropup-content {
-    display: none;
+    display:none;
     position: absolute;
-    background-color: rgb(32, 93, 203);
+    background-color: rgb(207, 29, 29);
     min-width: 160px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
 }
 
-.dropup-content a {
+.dropup:hover .dropup-content {
+    display: block;
+    opacity: 1;
+}
+
+.dropup-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    display:block;
 }
 
-.dropup-content a:hover {
+.dropup-content a:hover{
     background-color: #ccc;
 }
 
@@ -178,11 +185,11 @@ input [type="radio"]:checked+label {
 }
 
 .mission-text {
-    width: 45%; 
-    padding: 10%;
-    background-color: #ff1100;
+    width: 30%; 
+    padding: 5.5%;
+    background-color: hsl(4, 80%, 42%);
     box-shadow: 0 4px 10px rgba(12, 178, 229, 0.1);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .mission-text h1 { 
@@ -192,6 +199,9 @@ input [type="radio"]:checked+label {
 }
 
 .mission-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
+}
+.navigation-auto{
+    display: none;
 }
